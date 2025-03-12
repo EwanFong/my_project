@@ -27,3 +27,6 @@ Ctrl+Z 撤销操作
 Real-ESRGAN团队提供基础模型
 OpenCV和Qt社区的技术支持
 ONNX Runtime的推理优化
+
+License
+MIT License
