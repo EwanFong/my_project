@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Image Processor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QSplitter" name="mainSplitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>6</number>
+      </property>
+      <widget class="QWidget" name="leftPanel">
+       <layout class="QVBoxLayout" name="leftLayout">
+        <item>
+         <layout class="QHBoxLayout" name="toolbarLayout">
+          <item>
+           <spacer name="horizontalSpacerLeft">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnOpen">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+              QPushButton {
+                background:rgb(209, 165, 77);
+                border-radius: 4px;
+                color: white;
+              }
+              QPushButton:hover { background:rgb(8, 175, 247); }
+             </string>
+            </property>
+            <property name="text">
+             <string>Open</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDraw">
+            <property name="text">
+                <string>Draw (2-5/Z)</string>
+            </property>
+            <property name="toolTip">
+                <string>DrawingMode - shortcut: 1freehand 2rectangle 3triangle 4circle 5moscia Zundo</string>
+            </property>
+            <property name="checkable">
+            <bool>true</bool>
+            </property>
+            <property name="styleSheet">
+            <string notr="true">
+              QPushButton:hover { background:rgb(205, 7, 175); }
+              QPushButton:checked {    
+                background:rgb(205, 7, 175);  
+                color: white;
+                border: none;
+              }
+            </string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Draw</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDenoise">
+           <property name="checkable">  
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+            QPushButton:hover { background:rgb(91, 8, 247); }
+            QPushButton:checked {      
+                background:rgb(91, 8, 247);    
+                color: white;
+                border: none;
+            }
+            </string>
+           </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Denoise</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnInpaint">
+           <property name="styleSheet">
+             <string notr="true">
+              QPushButton:hover { background:rgb(214, 53, 13); }
+             </string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Inpaint</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacerRight">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listFileBrowser">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+            QListWidget {
+                background: white;
+                color: black;
+                border: 1px solid #cccccc;
+                font-family: Segoe UI;
+                font-size: 12px;
+            }
+            QListWidget::item {
+                height: 24px;
+                border-bottom: 1px solid #eeeeee;
+            }
+            QListWidget::item:hover {
+                background: #f0f6fc;
+                color: black;
+            }
+            QListWidget::item:selected {
+                background: #0078d4;
+                color: white;
+            }
+           </string>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool> 
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>3</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+         background: #f5f5f5;
+         border: 1px solid #cccccc;
+         border-radius: 3px;
+        </string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
