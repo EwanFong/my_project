@@ -20,6 +20,10 @@ Ctrl+Z 撤销操作
 点击Inpaint按钮开始修复（超分辨率图像修复）
 
 其中onnx模型根据以下
-官方https://github.com/xinntao/Real-ESRGAN中
-预训练权重wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P weights
+官方https://github.com/xinntao/Real-ESRGAN
+预训练权重RealESRGAN_x4plus.pth
 
+致谢 🙏
+Real-ESRGAN团队提供基础模型
+OpenCV和Qt社区的技术支持
+ONNX Runtime的推理优化
