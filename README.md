@@ -1,9 +1,8 @@
 # Image Restoration Toolkit 🔧🖼️
 
-+++[![CI Status](https://github.com/Ewanfong/image-restoration-toolkit/actions/workflows/build.yml/badge.svg)](https://github.com/yourusername/image-restoration-toolkit/actions)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![OpenCV Version](https://img.shields.io/badge/OpenCV-4.11%2B-blue)](https://opencv.org)
-[![Qt Version](https://img.shields.io/badge/Qt-6.53%2B-green)](https://www.qt.io)+++
+[![Qt Version](https://img.shields.io/badge/Qt-6.53%2B-green)](https://www.qt.io)
 
 基于Qt和OpenCV的图像修复工具，集成Real-ESRGAN超分辨率模型
 
@@ -33,6 +32,7 @@
 ### 快速开始
 # 克隆仓库
 git clone https://github.com/EwanFong/my_project.git
+
 cd my_project
 
 ./my_project
