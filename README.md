@@ -30,12 +30,6 @@
 | ONNX Runtime| 1.15.1        |
 
 ### 快速开始
-# 克隆仓库
-git clone https://github.com/EwanFong/my_project.git
-
-cd my_project
-
-./my_project
 1. **文件操作**
    - `Ctrl+S` 保存结果
    - `Ctrl+Z` 撤销操作
@@ -47,7 +41,7 @@ cd my_project
 | **Denoise**| 1-4    | 选择去噪算法                 | Q/E调整kernel数量 |
 | **Inpaint**| -      | 执行修复+超分辨率            | -                 |
 
-+++## 模型合规性说明 ⚖️
+## 模型合规性说明 ⚖️
 本项目严格遵循开源协议要求：
 1. **模型转换**：使用官方提供的RealESRGAN_x4plus.pth权重转换为ONNX格式
 2. **代码原创性**：推理逻辑完全使用C++重新实现
