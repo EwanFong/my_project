@@ -47,4 +47,4 @@
 2. **代码原创性**：推理逻辑完全使用C++重新实现
 3. **协议继承**：
    - 项目代码采用[MIT License](LICENSE)
-   - 模型部分继承[Apache-2.0 License](thirdparty/RealESRGAN_LICENSE)
+   - 模型部分继承[Apache-2.0 License](RealESRGAN_LICENSE)
