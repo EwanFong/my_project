@@ -47,7 +47,8 @@
 2. **代码原创性**：推理逻辑完全使用C++重新实现
 3. **协议继承**：
    - 项目代码采用[MIT License](LICENSE)
-致谢 🙏
+
+## 致谢 🙏
 Real-ESRGAN团队提供基础模型
 OpenCV和Qt社区的技术支持
 ONNX Runtime的推理优化
