@@ -15,22 +15,27 @@
 - 🖼️ 多格式支持：PNG/JPG
 
 ## 技术栈 🛠️
-- **核心框架**: Qt 5.15+ 
-- **图像处理**: OpenCV 4.5+
-- **模型推理**: ONNX Runtime 1.12+
-- **模型架构**: Real-ESRGAN (Apache-2.0 License)+++
+- **核心框架**: Qt 6.53+ 
+- **图像处理**: OpenCV 4.11+
+- **模型推理**: ONNX Runtime 1.51+
+- **模型架构**: Real-ESRGAN (Apache-2.0 License)
 
 ## 使用指南 📖
+## 版本验证 ✅
+本项目已通过以下环境测试：
+| 组件       | 版本          |
+|------------|---------------|
+| OpenCV     | 4.11         |
+| Qt         | 6.53        |
+| C++标准    | C++17         |
+| ONNX Runtime| 1.15.1        |
 
 ### 快速开始
-+++```bash
 # 克隆仓库
-git clone https://github.com/yourusername/image-restoration-toolkit.git
-cd image-restoration-toolkit
+git clone https://github.com/EwanFong/my_project.git
+cd my_project
 
-# 下载模型文件（必须步骤）
-wget -P models/ https://github.com/EwanFong/my_project/models/RealESRGAN_x4plus.onnx
-
+./my_project
 1. **文件操作**
    - `Ctrl+S` 保存结果
    - `Ctrl+Z` 撤销操作
