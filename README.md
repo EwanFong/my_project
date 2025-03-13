@@ -43,7 +43,7 @@
 
 ## 模型合规性说明 ⚖️
 本项目严格遵循开源协议要求：
-1. **模型转换**：使用官方提供的RealESRGAN_x4plus.pth权重转换为ONNX格式
+1. **模型转换**：使用官方提供的RealESRGAN_x4plus.pth权重转换为ONNX格式(https://github.com/xinntao/Real-ESRGAN)
 2. **代码原创性**：推理逻辑完全使用C++重新实现
 3. **协议继承**：
    - 项目代码采用[MIT License](LICENSE)
