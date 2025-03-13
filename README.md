@@ -7,8 +7,9 @@
 基于Qt和OpenCV的图像修复工具，集成Real-ESRGAN超分辨率模型
 
 ## 主要功能 ✨
-- 🖌️ 智能图像修复（Inpainting）
-- 🔍 4倍超分辨率重建
+- 🔍 4倍超分辨率重建 （Inpainting）
+- 🖌️ 图像绘画功能 (Draw)
+- 🌫️ 去噪功能 (Denoise)
 - 🎨 实时预览修复效果
 - 📚 操作历史记录（Undo/Redo）
 - 🖼️ 多格式支持：PNG/JPG
