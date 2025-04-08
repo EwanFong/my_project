@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/602810c6-94c9-4f12-bab2-88a450d620e9
 ## 技术栈 🛠️
 - **核心框架**: Qt 6.53+ 
 - **图像处理**: OpenCV 4.11+
-- **模型推理**: ONNX Runtime 1.51+
+- **模型推理**: ONNX Runtime 1.15+
 - **模型架构**: Real-ESRGAN (Apache-2.0 License)
 
 
